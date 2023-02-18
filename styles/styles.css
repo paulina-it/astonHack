@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  flex-direction: row;
+}
+header #main_icon {
+  height: 2.2em;
+  background-color: black;
+  padding: 2px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 2em;
+  border-radius: 50px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  justify-content: space-around;
+  width: 10em;
+  margin-top: 2em;
+}
+
+#type-container {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://img.freepik.com/premium-vector/collection-flying-greylag-geese-isolated-white-realistic-ink-sketches-wild-birds-animals-set-hand-drawn-vector-illustration-black-vintage-graphic-elements-design_534604-159.jpg?w=360");
+}
+#type-container h2 {
+  background-color: white;
+  padding: 1em;
+  margin-bottom: -0.5em;
+  border-radius: 5px;
+  box-shadow: 3px 5px 15px rgb(226, 226, 226);
+}
+
+#search-container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+#search-container #city, #search-container #activity {
+  margin-bottom: 4px;
+}
+#search-container button {
+  align-self: center;
+}
+
+#list-contatiner {
+  width: 75%;
+}
+#list-contatiner h2 {
+  text-align: center;
+}
+#list-contatiner img {
+  width: 10em;
+  height: 13em;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#list-contatiner .activity {
+  display: flex;
+  flex-direction: row;
+  margin: 5em;
+}
+#list-contatiner .descr {
+  margin-left: 3em;
+}/*# sourceMappingURL=styles.css.map */
