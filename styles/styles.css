@@ -49,7 +49,8 @@ main {
   flex-direction: column;
   margin-bottom: 3em;
 }
-#search-container #city, #search-container #activity {
+#search-container #city,
+#search-container #activity {
   margin-bottom: 4px;
 }
 #search-container button {
@@ -68,6 +69,7 @@ main {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 3px 5px 15px rgb(226, 226, 226);
 }
 #list-contatiner .activity {
   display: flex;

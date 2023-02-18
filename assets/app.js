@@ -107,9 +107,9 @@ function chooseRandom() {
             suitablePlaces.push(element);
         }
     });
-    let i = Math.round(Math.random() * suitablePlaces.length);
+    let i = Math.round(Math.random() * (suitablePlaces.length-1));
     let container = document.getElementById('list-contatiner');
-    let place = suitablePlaces[0];
+    let place = suitablePlaces[i];
     container.innerHTML = '<h2>This is your random activity:</h2>';
     container.innerHTML += `<div class="activity">
                     <img class="icon" src="${place.img}" alt="${place.img}">
@@ -201,7 +201,7 @@ const data = [{
         address: '18 - 24 Constitution Hill, Birmingham B19 3LY',
         average_price: 25,
         web: 'https://www.escapelive.co.uk/locations/birmingham/?gclid=Cj0KCQiAi8KfBhCuARIsADp-A564F2i0P7_-0a8jmVCV-gkv_MB_vV8HWfhhH0Bf9jrdWhCMnJhn2z4aAoHBEALw_wcB',
-        img: ''
+        img: './assets/img/birmingham/escape_live.png'
     },
 
     {
@@ -211,7 +211,7 @@ const data = [{
         address: 'Chamberlain Sq, Birmingham B3 3DH',
         average_price: 0,
         web: 'https://www.birminghammuseums.org.uk/bmag/visit',
-        img: ''
+        img: './assets/img/birmingham/art_gallery.jpg'
     },
 
     {
@@ -221,7 +221,7 @@ const data = [{
         address: 'Millennium Point, Curzon St, Birmingham B4 7XG',
         average_price: 18,
         web: 'https://www.birminghammuseums.org.uk/thinktank',
-        img: ''
+        img: './assets/img/birmingham/thinktank.jpg'
     },
 
     {
@@ -231,7 +231,7 @@ const data = [{
         address: '75-80 Vyse St, Birmingham B18 6HA',
         average_price: 6,
         web: 'https://www.birminghammuseums.org.uk/museum-of-the-jewellery-quarter',
-        img: ''
+        img: './assets/img/birmingham/jewellery_Quarter_Museum.jpg'
     },
     {
         city: 'Birmingham',
@@ -240,7 +240,7 @@ const data = [{
         address: 'Soho Ave, Birmingham B18 5LB',
         average_price: 7,
         web: 'https://www.birminghammuseums.org.uk/soho-house',
-        img: ''
+        img: './assets/img/birmingham/sohohouse.jpg'
     },
     {
         city: 'Birmingham',
@@ -249,7 +249,7 @@ const data = [{
         address: 'Trinity Rd, Birmingham B6 6JD',
         average_price: 11,
         web: 'https://www.birminghammuseums.org.uk/aston-hall/visit/tickets',
-        img: ''
+        img: './assets/img/birmingham/Aston_Hall.jpg'
     },
     {
         city: 'Birmingham',
@@ -258,7 +258,7 @@ const data = [{
         address: '226 Monument Rd, Birmingham B16 8UZ',
         average_price: 15,
         web: 'https://www.torizerocafe.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/tori_zero.jpg'
     },
     {
         city: 'Birmingham',
@@ -267,7 +267,7 @@ const data = [{
         address: 'The Waters Edge, Eleven Brindley Place, Birmingham B1 2HL',
         average_price: 18,
         web: 'https://www.visitsealife.com/birmingham/tickets-prices/ways-to-visit/general-tickets/',
-        img: ''
+        img: './assets/img/birmingham/sea_life_center.jpg'
     },
     {
         city: 'Birmingham',
@@ -276,7 +276,7 @@ const data = [{
         address: 'Pershore Rd, Birmingham B5 7RL',
         average_price: 6,
         web: 'https://www.birmingham.gov.uk/info/50042/birmingham_wildlife_conservation_park/869/visiting_the_birmingham_wildlife_conservation_park/2',
-        img: ''
+        img: './assets/img/birmingham/conservation_park.jpg'
     },
     {
         city: 'Birmingham',
@@ -285,7 +285,7 @@ const data = [{
         address: 'Spring Grove, Bewdley DY12 1LF',
         average_price: 22,
         web: 'https://www.wmsp.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/safari_park.jpg'
     },
     {
         city: 'Birmingham',
@@ -303,7 +303,7 @@ const data = [{
         address: 'Cadbury World, 69 Linden Rd, Bournville, Birmingham B30 1JR',
         average_price: 21,
         web: 'https://www.cadburyworld.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/cadbury_world.jpg'
     },
     {
         city: 'Birmingham',
@@ -312,7 +312,7 @@ const data = [{
         address: 'Centenary Sq, Broad St, Birmingham B1 2EA',
         average_price: 0,
         web: 'https://birmingham.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME',
-        img: ''
+        img: './assets/img/birmingham/library_of_birmingham.jpg'
     },
     {
         city: 'Birmingham',
@@ -321,7 +321,7 @@ const data = [{
         address: 'LEGOLAND Discovery Centre, Arena, King Edwards Rd, Birmingham B1 2AA',
         average_price: 20,
         web: 'https://www.legolanddiscoverycentre.com/birmingham/',
-        img: ''
+        img: './assets/img/birmingham/legoland.jpg'
     },
     {
         city: 'Birmingham',
@@ -330,7 +330,7 @@ const data = [{
         address: 'Westbourne Rd, Birmingham B15 3TR',
         average_price: 8,
         web: 'https://www.birminghambotanicalgardens.org.uk/?utm_source=google&utm_medium=organic&utm_campaign=gmb',
-        img: ''
+        img: './assets/img/birmingham/botanicalgarden.jpg'
     },
     {
         city: 'Birmingham',
@@ -339,7 +339,7 @@ const data = [{
         address: '58 Edgbaston Park Rd, Birmingham B15 2RT',
         average_price: 8,
         web: 'https://www.winterbourne.org.uk/admission-prices/',
-        img: ''
+        img: './assets/img/birmingham/Winterbourne House and Botanical Garden.jpg'
     },
     {
         city: 'Birmingham',
@@ -348,7 +348,7 @@ const data = [{
         address: 'Cathedral Square, Colmore Row, Birmingham B3 2QB',
         average_price: 0,
         web: 'https://birminghamcathedral.com/',
-        img: ''
+        img: './assets/img/birmingham/st_phillips_cathedral.jpg'
     },
     {
         city: 'Birmingham',
@@ -357,7 +357,7 @@ const data = [{
         address: 'Russell Rd, Moseley, Birmingham B13 8RD',
         average_price: 0,
         web: 'https://www.birmingham.gov.uk/directory_record/9091/cannon_hill_park',
-        img: ''
+        img: './assets/img/birmingham/cannon_hill_parc.jpg'
     },
     {
         city: 'Birmingham',
@@ -366,7 +366,7 @@ const data = [{
         address: 'Broadway Plaza Ladywood Middleway, Birmingham B16 8LP',
         average_price: 8,
         web: 'https://www.hollywoodbowl.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/hollywood bowl.jpg'
     },
     {
         city: 'Birmingham',
@@ -375,7 +375,7 @@ const data = [{
         address: 'Royal Mail St, Birmingham B1 1RS',
         average_price: 0,
         web: 'https://mailboxlife.com/',
-        img: ''
+        img: './assets/img/birmingham/mailbox.jpg'
     },
     {
         city: 'Birmingham',
@@ -384,7 +384,7 @@ const data = [{
         address: '196 Wharfside St, Birmingham B1 1RN',
         average_price: 0,
         web: 'https://www.thecube.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/the_cube.jpg'
     },
     {
         city: 'Birmingham',
@@ -393,7 +393,7 @@ const data = [{
         address: 'Moor St, Birmingham B5 4BU',
         average_price: 0,
         web: 'https://www.bullring.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/bullring.jpg'
     },
     {
         city: 'Birmingham',
@@ -402,7 +402,7 @@ const data = [{
         address: '26 Waterfront Walk, Birmingham B1 1SR',
         average_price: 10,
         web: 'https://www.instagram.com/cocoabyali/',
-        img: ''
+        img: './assets/img/birmingham/cocoa.jpg'
     },
     {
         city: 'Birmingham',
@@ -411,7 +411,7 @@ const data = [{
         address: 'Woodgate Valley Country Park',
         average_price: 0,
         web: 'https://www.birmingham.gov.uk/wvcp',
-        img: ''
+        img: './assets/img/birmingham/woodgate_valley_park.jpg'
     },
     {
         city: 'Birmingham',
@@ -420,7 +420,7 @@ const data = [{
         address: 'Broad St, Birmingham B1 2EA',
         average_price: 0,
         web: 'https://www.thsh.co.uk/symphony-hall',
-        img: ''
+        img: './assets/img/birmingham/symphony_hall.jpg'
     },
     {
         city: 'Birmingham',
@@ -429,6 +429,6 @@ const data = [{
         address: '25 Frederick St, Birmingham B1 3HH',
         average_price: 0,
         web: 'http://thebuttonfactorybirmingham.co.uk/',
-        img: ''
+        img: './assets/img/birmingham/'
     },
 ];
